@@ -7,5 +7,6 @@
     <p>{{ book.content }}</p>
     <p>{{ book.author }}</p>
     <h4>{{ book.price }}</h4>
-    <a href="{% url 'book_list' %}">لیست همه کتاب ها</a>
+    <a href="{% url 'book_list' %}"><button class="btn btn-success" type="submit">لیست همه کتاب ها</button></a>
+    <a href="{% url 'book_update' book.id %}"><button type="submit" class="btn btn-info">ویرایش</button></a>
 {% endblock %}
