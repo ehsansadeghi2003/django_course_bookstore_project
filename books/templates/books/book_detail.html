@@ -9,4 +9,5 @@
     <h4>{{ book.price }}</h4>
     <a href="{% url 'book_list' %}"><button class="btn btn-success" type="submit">لیست همه کتاب ها</button></a>
     <a href="{% url 'book_update' book.id %}"><button type="submit" class="btn btn-info">ویرایش</button></a>
+    <a href="{% url 'book_delete' book.id %}"><button type="submit" class="btn btn-danger">حذف</button></a>
 {% endblock %}
